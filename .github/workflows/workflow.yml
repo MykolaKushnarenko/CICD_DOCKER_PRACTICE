@@ -5,7 +5,7 @@ on: [push]
 env:
   WEBAPP_NAME: ExapleApp    # set this to your application's name
   WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6.0.1'           # set this to the dot net version to use
+  DOTNET_VERSION: '6.x'           # set this to the dot net version to use
 
 jobs:
   build-and-deploy:
