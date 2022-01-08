@@ -25,4 +25,4 @@ jobs:
       - name: dotnet build and publish
         run: |
           dotnet build "./ExampleAppNet6/ExampleAppNet6.csproj" --configuration Release
-          dotnet publish -c Release -o dist 
+          dotnet publish "./ExampleAppNet6/ExampleAppNet6.csproj" -c Release -o dist 
