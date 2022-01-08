@@ -1,9 +1,6 @@
 name: Build Net6 web app
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 env:
   WEBAPP_NAME: ExapleApp    # set this to your application's name
@@ -16,10 +13,10 @@ jobs:
     steps:
 
       # Checkout the repo
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       
-      # Setup .NET Core SDK
-      - name: Setup .NET Core
+      # Setup .NET 6
+      - name: Setup .NET6
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }} 
